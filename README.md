@@ -14,22 +14,12 @@ The web application is where we register collection centers, and the mobile appl
 
 ## 😍 Technologies
 
-<table>
-<tr><th>Backend</th><th>Web</th><th>Mobile</th></tr>
-<tr>
-<td>[Node.js][node_url]</td>
-<td>[React][react_url]</td>
-<td>[React Native][react_native_url]</td>
-</tr>
-<tr>
-<td colspan="3" align="center">[TypeScript][typescript_url]</td>
-</tr>
-<tr>
-<td>[ExpressJS][express_url]</td>
-<td></td>
-<td>[Expo][expo_url]</td>
-</tr>
-</table>
+- [Node.js]([node_url])
+- [React][react_url]
+- [React Native][react_native_url]
+- [TypeScript][typescript_url]
+- [ExpressJS][express_url]
+- [Expo][expo_url]
 
 ## 🙃 Installation
 
@@ -69,6 +59,8 @@ $ yarn install
 $ yarn start
 ```
 
+You can access through the URL [localhost:3000](localhost:3000).
+
 ### Mobile
 
 ```bash
@@ -82,6 +74,11 @@ $ yarn start
 ```
 
 A window will open, scan the qrcode using the [Expo App](https://play.google.com/store/apps/details?id=host.exp.exponent).
+
+## 😓 Known issues
+You may have trouble showing the images as the api has an IP fixed in the code. While I don't update this to be more dynamic, you can update the API code with your own local IP address.
+
+To do it, just update the file [/src/controllers/CentersController.ts](https://github.com/cleiver/Rocketseat-NLW01-Ecoleta/blob/master/api/src/controllers/CentersController.ts), lines [61](https://github.com/cleiver/Rocketseat-NLW01-Ecoleta/blob/master/api/src/controllers/CentersController.ts#L61) and [103](https://github.com/cleiver/Rocketseat-NLW01-Ecoleta/blob/master/api/src/controllers/CentersController.ts#L103).
 
 
 [node_url]: https://nodejs.org
